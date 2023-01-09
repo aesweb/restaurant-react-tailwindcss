@@ -1,20 +1,18 @@
 import React from 'react';
-// import components
+
 import TestimonialCarousel from '../components/TestimonialCarousel';
-// import data
+
 import { testimonialData } from '../data';
-// import motion
+
 import { motion } from 'framer-motion';
-// import variants
+
 import { fadeIn } from '../variants';
 
 const Testimonial = () => {
-  // destructure testimonial data
   const { title, subtitle, modelImg, slider } = testimonialData;
   return (
     <section className="bg-testimonial bg-cover bg-no-repeat relative top-[340px] lg:top-[390px] z-10 h-[800px] pt-[60px] md:pt-[120px]">
       <div className="container mx-auto">
-        {/* text */}
         <motion.div
           variants={fadeIn('up', 'tween', 0.2, 1.6)}
           initial="hidden"
@@ -28,7 +26,6 @@ const Testimonial = () => {
           </div>
         </motion.div>
 
-        {/* slider */}
         <motion.div
           variants={fadeIn('up', 'tween', 0.4, 1.6)}
           initial="hidden"

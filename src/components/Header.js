@@ -69,7 +69,6 @@ const Header = () => {
         className="container mx-auto"
       >
         <div className="flex justify-between items-center px-4 lg:px-0 relative text-white">
-          {/* menu button */}
           <motion.div
             variants={fadeIn('down', 'tween', 1, 1.4)}
             className={`${
@@ -92,7 +91,7 @@ const Header = () => {
               className="w-full h-[2px] bg-white"
             ></motion.div>
           </motion.div>
-          {/* logo */}
+
           <motion.div
             variants={fadeIn('down', 'tween', 1.2, 1.4)}
             className="order-1 lg:order-none lg:ml-[11rem]"
@@ -107,14 +106,14 @@ const Header = () => {
               />
             </a>
           </motion.div>
-          {/* socials */}
+
           <motion.div
             variants={fadeIn('down', 'tween', 1.4, 1.4)}
             className="hidden lg:flex"
           >
             <Socials />
           </motion.div>
-          {/* nav */}
+
           <motion.div
             variants={navVariants}
             initial="hidden"

@@ -1,13 +1,12 @@
 import React from 'react';
-// import data
+
 import { teamData } from '../data';
-// import motion
+
 import { motion } from 'framer-motion';
-// import variants
+
 import { fadeIn } from '../variants';
 
 const Team = () => {
-  // destructure team data
   const {
     pretitle,
     title,
@@ -21,9 +20,7 @@ const Team = () => {
   return (
     <section className="relative top-96 z-10 lg:top-[480px] min-h-[720px]">
       <div className="container mx-auto">
-        {/* text & image wrapper */}
         <div className="flex flex-col lg:flex-row lg:gap-x-[120px] items-center lg:items-start">
-          {/* text */}
           <motion.div
             variants={fadeIn('down', 'tween', 0.6, 1.6)}
             initial="hidden"
@@ -46,7 +43,7 @@ const Team = () => {
               <img src={signatureImg} alt="" />
             </div>
           </motion.div>
-          {/* image */}
+
           <motion.div
             variants={fadeIn('up', 'tween', 0.7, 1.6)}
             initial="hidden"

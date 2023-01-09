@@ -14,7 +14,6 @@ const TestimonialCarousel = ({ slider }) => {
       className="w-full flex items-center justify-center"
     >
       {slider.map((item, index) => {
-        // destructure item
         const { image, message, name, occupation } = item;
         return (
           <div className="max-w-[840px] mx-auto px-24 text-white" key={index}>
