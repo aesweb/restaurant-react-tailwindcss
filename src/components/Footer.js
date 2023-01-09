@@ -14,8 +14,8 @@ const Footer = () => {
   // destructure footer data
   const { contact, hours, social } = footerData;
   return (
-    <footer className="relative top-96 z-20 bg-dark lg:bg-transparent lg:min-h-[620px] lg:bg-footer lg:bg-center lg:bg-no-repeat pt-20 lg:pt-32">
-      <div className="container mx-auto h-full">
+    <footer className="relative top-96 z-20 bg-dark lg:bg-transparent lg:min-h-[620px] lg:bg-footer lg:bg-cover lg:bg-no-repeat pt-20 lg:pt-32">
+      <div className="container mx-auto">
         {/* newsletter & info */}
         <motion.div
           variants={staggerContainer}
@@ -33,7 +33,7 @@ const Footer = () => {
             className="flex flex-col lg:flex-row lg:gap-x-[130px] gap-y-12 lg:gap-y-0 lg:mb-12"
           >
             {/* contact */}
-            <div className="flex-1 lg:max-w-[170px]">
+            <div className="flex-1">
               <div className="capitalize text-[20px] lg:text-[22px] font-normal text-white font-primary mb-[22px]">
                 {contact.title}
               </div>
