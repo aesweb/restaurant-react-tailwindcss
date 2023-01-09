@@ -29,7 +29,7 @@ export const navVariants = {
     opacity: 0,
     transition: {
       type: 'spring',
-      delay: '0.2',
+      delay: 0.2,
       stiffness: 300,
       damping: 140,
     },
@@ -93,7 +93,10 @@ const Header = () => {
             ></motion.div>
           </motion.div>
           {/* logo */}
-          <motion.div variants={fadeIn('down', 'tween', 1.2, 1.4)}>
+          <motion.div
+            variants={fadeIn('down', 'tween', 1.2, 1.4)}
+            className="order-1 lg:order-none lg:ml-[11rem]"
+          >
             <a href="#">
               <img
                 className={`${
