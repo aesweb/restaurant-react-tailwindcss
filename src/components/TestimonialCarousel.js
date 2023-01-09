@@ -11,7 +11,7 @@ const TestimonialCarousel = ({ slider }) => {
       showIndicators={false}
       autoPlay={false}
       infiniteLoop={true}
-      className="w-full max-w-[1024px] flex items-center justify-center"
+      className="w-full flex items-center justify-center"
     >
       {slider.map((item, index) => {
         // destructure item

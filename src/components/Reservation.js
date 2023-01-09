@@ -99,7 +99,7 @@ const Reservation = () => {
             </div>
           </div>
           {/* button */}
-          <div className="max-w-[316px] mx-auto flex justify-center">
+          <div className="mx-auto flex justify-center">
             <button className="btn capitalize w-full lg:w-auto">
               {btnText}
             </button>

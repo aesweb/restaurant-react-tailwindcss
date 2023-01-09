@@ -8,7 +8,7 @@ const Menu = () => {
   const { title, subtitle, modelImg, menuItems, btnText } = menuData;
   return (
     <section className="min-h-[780px]">
-      <div className="h-[780px] bg-menu absolute w-full max-w-[1800px] -z-0"></div>
+      <div className="h-[780px] bg-menu absolute w-full -z-0"></div>
 
       <div className="relative z-10 top-72 kg:top-52">
         <motion.div
@@ -20,7 +20,7 @@ const Menu = () => {
         >
           <motion.h2
             variants={fadeIn('down', 'tween', 0.2, 1.6)}
-            className="h2 capitalize text-white max-w-[400px] text-center"
+            className="h2 capitalize text-white text-center"
           >
             {title}
           </motion.h2>

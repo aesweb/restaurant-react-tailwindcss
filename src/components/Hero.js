@@ -11,7 +11,7 @@ import { fadeIn, staggerContainer } from '../variants';
 const Hero = () => {
   const { pretitle, title, subtitle, btnText } = heroData;
   return (
-    <section className="min-h-[980px] bg-hero bg-cover bg-right">
+    <section className="bg-hero bg-cover bg-right">
       <Header />
       <div className="container mx-auto min-h-[980px] flex justify-center items-center">
         {/* text */}
@@ -37,7 +37,7 @@ const Hero = () => {
           </motion.h1>
           <motion.p
             variants={fadeIn('down', 'tween', 0.4, 1.1)}
-            className="text-white max-w-[540px] mb-8"
+            className="text-white mb-8"
           >
             {subtitle}
           </motion.p>
