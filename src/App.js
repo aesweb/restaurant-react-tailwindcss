@@ -11,7 +11,7 @@ import Testimonial from "./components/Testimonial";
 const App = () => {
   return (
     <div className="h-full bg-pattern bg-repeat  overflow-hidden">
-      <div>Development Preview Test</div>
+      <div>Development Preview Test</div> Main branch code
       <Hero />
       <About />
       <Menu />
